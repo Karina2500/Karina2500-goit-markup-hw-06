@@ -334,6 +334,47 @@
                     <use href="./images/symbol.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <form class="form-main">
+                <h3 class="main-name">Оставьте свои данные, мы вам перезвоним</h3>
+                <div class="form-modal">
+                    <label class="main-form">
+                        <p class="name-main-lable">Имя</p>
+                        <input type="text" class="form-main-input" name="name" id="name">
+                        <svg class="form-main-icon">
+                            <use href="./images/symbol.svg#icon-man"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="form-modal">
+                    <label class="main-form">
+                        <p class="name-main-lable">Телефон</p>
+                        <input type="text" class="form-main-input" name="tel" id="tel">
+                        <svg class="form-main-icon">
+                            <use href="./images/symbol.svg#icon-tel"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="form-modal">
+                    <label class="main-form">
+                        <p class="name-main-lable">Почта</p>
+                        <input type="text" class="form-main-input" name="mail" id="mail">
+                        <svg class="form-main-icon">
+                            <use href="./images/symbol.svg#icon-post"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="comment-form">
+                    <label class="main-form" for="coments"></label>
+                    <p class="name-main-lable">Комментарий</p>
+                    <textarea class="textarea-form" name="comments" id="comments" cols="30" rows="10"
+                        placeholder="Введите текст"></textarea>
+                </div>
+                <div class="chek-main">
+                    <input type="checkbox" name="" id="">
+                    <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </div>
+                <button class="form-main-button" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <footer class="footer">
@@ -388,13 +429,17 @@
                     </li>
                 </ul>
             </div>
-            <div role="group">
-                <form>
-                    <label for="mail">Подпишитесь на рассылку</label>
-                    <input type="text" name="mail" id="mail">
-                    <button type="submit">Подписаться</button>
-                </form>
-            </div>
+            <form class="form-footer">
+                <div class="form-foot">
+                    <label for="mail" class="form-lable">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                    <input class="form-input" type="text" name="mail" id="mail" placeholder="E-mail">
+                </div>
+                <button class="form-bottom" type="submit">Подписаться
+                    <svg class="form-footer-icon">
+                        <use href="./images/symbol.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
 
