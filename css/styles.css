@@ -947,8 +947,23 @@ justify-content: space-between;
     fill: var(--background-color);
 }
 
+/* cards place */
+
 .form-main {
+    display: flex;
     width: 448px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.form-div {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.125;
+    margin-bottom: 20px;
 }
 
 .main-name {
@@ -961,6 +976,9 @@ justify-content: space-between;
 }
 
 .form-main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     background-color: var(--accent-text-color);
@@ -969,27 +987,18 @@ justify-content: space-between;
     border-radius: 4px;
     border: var(--accent-text-color);
 
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 55px;
 }
 
 .form-modal {
     position: relative;
     margin-bottom: 10px;
     display: block;
-    text-align: center;
-
+    
     font-weight: 400;
     font-size: 12px;
     color: var(--secondary-text-color);
@@ -998,12 +1007,13 @@ justify-content: space-between;
 }
 
 .main-form {
-    position: absolute;
     display: block;
-    text-align: start;
-    width: 12px;
-    height: 12px;
-    margin-left: 15px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--secondary-text-color);
 }
 
 .form-main-input {
@@ -1017,10 +1027,11 @@ justify-content: space-between;
 
 .form-main-icon {
     position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
     width: 18px;
     height: 18px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .comment-form {
