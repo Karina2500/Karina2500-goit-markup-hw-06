@@ -338,14 +338,14 @@
                 <h2 class="main-name">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-modal">
                     <label class="main-form">Имя</label>
-                    <input type="text" class="form-main-input" name="name" id="name">
+                    <input type="text" class="form-main-input" name="name" id="name" required>
                     <svg class="form-main-icon">
                         <use href="./images/symbol.svg#icon-man"></use>
                     </svg>
                 </div>
                 <div class="form-modal">
                     <label class="main-form">Телефон</label>
-                    <input type="text" class="form-main-input" name="tel" id="tel">
+                    <input type="text" class="form-main-input" name="tel" id="tel" required>
                     <svg class="form-main-icon">
                         <use href="./images/symbol.svg#icon-tel"></use>
                     </svg>
@@ -353,7 +353,7 @@
                 </div>
                 <div class="form-modal">
                     <label class="main-form">Почта</label>
-                    <input type="text" class="form-main-input" name="mail" id="mail">
+                    <input type="text" class="form-main-input" name="mail" id="mail" required>
                     <svg class="form-main-icon">
                         <use href="./images/symbol.svg#icon-post"></use>
                     </svg>
@@ -364,8 +364,12 @@
                         placeholder="Введите текст"></textarea>
                 </div>
                 <div class="chek-main">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <label class="checkbox-label" for="checkbox">
+                        <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+                        <span class="icon-check"></span>
+                        <span class="check-text">Соглашаюсь с рассылкой и принимаю</span>
+                        <a class="agree" href="">Условия договора</a>
+                    </label>
                 </div>
                 <button class="form-main-button" type="submit">Отправить</button>
             </form>
@@ -427,7 +431,7 @@
                 <h3 class="form-name">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
                 <div class="form-foot">
                     <label for="mail" class="form-lable">
-                        <input class="form-input" type="text" name="mail" id="mail" placeholder="E-mail">
+                        <input class="form-input" type="text" name="mail" id="mail" placeholder="E-mail" required>
                     </label>
                 </div>
                 <button class="form-bottom" type="submit">Подписаться
