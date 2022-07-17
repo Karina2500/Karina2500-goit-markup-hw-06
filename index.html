@@ -337,26 +337,28 @@
             <form class="form-main" role="group">
                 <h2 class="main-name">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-modal">
-                    <label class="main-form">Имя</label>
-                    <input type="text" class="form-main-input" name="name" id="name" required>
-                    <svg class="form-main-icon">
-                        <use href="./images/symbol.svg#icon-man"></use>
-                    </svg>
+                    <label class="main-form" for="name">Имя
+                        <input type="text" class="form-main-input" name="name" id="name" required>
+                        <svg class="form-main-icon">
+                            <use href="./images/symbol.svg#icon-man"></use>
+                        </svg>
+                    </label>
                 </div>
                 <div class="form-modal">
-                    <label class="main-form">Телефон</label>
-                    <input type="text" class="form-main-input" name="tel" id="tel" required>
-                    <svg class="form-main-icon">
-                        <use href="./images/symbol.svg#icon-tel"></use>
-                    </svg>
-
+                    <label class="main-form" for="tel">Телефон
+                        <input type="text" class="form-main-input" name="tel" id="tel" required>
+                        <svg class="form-main-icon">
+                            <use href="./images/symbol.svg#icon-tel"></use>
+                        </svg>
+                    </label>
                 </div>
                 <div class="form-modal">
-                    <label class="main-form">Почта</label>
-                    <input type="text" class="form-main-input" name="mail" id="mail" required>
-                    <svg class="form-main-icon">
-                        <use href="./images/symbol.svg#icon-post"></use>
-                    </svg>
+                    <label class="main-form" for="mail">Почта
+                        <input type="text" class="form-main-input" name="mail" id="mail" required>
+                        <svg class="form-main-icon">
+                            <use href="./images/symbol.svg#icon-post"></use>
+                        </svg>
+                    </label>
                 </div>
                 <div class="comment-form">
                     <label class="main-form" for="coments">Комментарий</label>
@@ -428,17 +430,18 @@
                 </ul>
             </div>
             <div class="forms">
-                <h3 class="form-name">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                <div class="form-foot">
-                    <label for="mail" class="form-lable">
-                        <input class="form-input" type="text" name="mail" id="mail" placeholder="E-mail" required>
-                    </label>
-                </div>
-                <button class="form-bottom" type="submit">Подписаться
-                    <svg class="form-footer-icon">
-                        <use href="./images/symbol.svg#icon-icon-send"></use>
-                    </svg>
-                </button>
+                <form class="form-block-foot">
+                    <div class="form-foot">
+                        <label for="but" class="form-lable">ПОДПИШИТЕСЬ НА РАССЫЛКУ
+                            <input class="form-input" type="text" name="mail" id="but" placeholder="E-mail" required>
+                        </label>
+                    </div>
+                    <button class="form-bottom" type="submit">Подписаться
+                        <svg class="form-footer-icon">
+                            <use href="./images/symbol.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
